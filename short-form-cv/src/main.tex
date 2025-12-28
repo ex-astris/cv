@@ -1,0 +1,268 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy CV/Resume
+% XeLaTeX Template
+% Version 1.0 (5/5/2014)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Debarghya Das (http://www.debarghyadas.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4
+\usepackage{color}
+
+% TODO: Add Gitlab website
+% TODO: VP/Head - Streamline operations by xxx%
+% TODO: Only add Astris once its full time
+
+\hypersetup{colorlinks=true,linkcolor=cyan,urlcolor=cyan}
+\urlstyle{rm}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+    \lastupdated % Print the Last Updated text at the top right
+
+    \namesection{Najmus}{Ibrahim}{ % Your name
+        \href{mailto:najmus@astrisaerospace.com}{najmus@astrisaerospace.com} | 416.262.2352 |  \href{http://www.astrisaerospace.com/nibrahim-long-form-cv.pdf}{Long Form CV}
+
+    }
+
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+
+    \begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%------------------------------------------------
+% Education
+%------------------------------------------------
+
+        \section{Education}
+
+        \subsection{University of Toronto}
+        \descript{Aerospace Engineering}
+        \location{MASc, BASc | Toronto, Canada}
+        Astrodynamics, Control, Estimation \\
+        Optimization, Spacecraft Dynamics
+
+        %------------------------------------------------
+        \sectionspace % Some whitespace after the section
+
+        \subsection{University of Toronto}
+        \descript{Computer Science}
+        \location{Supplementary Graduate Studies}
+        Machine Learning (AI), Deep Learning
+
+%------------------------------------------------
+% Coursework
+%------------------------------------------------
+
+        \section{Training}
+
+        \subsection{University of Oxford}
+        \descript{Said Business School}
+        \location{Leading Strategic Projects}
+        Strategic Project Management \\
+        Global Stakeholder Management \\
+        Complex Risk Assessment
+
+
+        %------------------------------------------------
+        \sectionspace % Some whitespace after the section
+
+        \subsection{ESA School on GNSS}
+        \descript{Global Navigation Sat. Systems}
+        \location{Barcelona, Spain}
+%        {\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst) }}} \\
+
+        \sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Skills
+%------------------------------------------------
+
+        \section{Skills}
+
+        \subsection{Leadership}
+
+        Strategy \textbullet{}
+        Line Management \textbullet{} Contract Negotiation \textbullet{} Proposals \textbullet{}
+        Subcontractor Management \textbullet{} Roadmapping \textbullet{} Coaching\\
+
+        \sectionspace % Some whitespace after the section
+
+        \subsection{Software Development}
+
+        \location{Over 10,000 lines:}
+        C / C++ (17/20) \textbullet{} Python \textbullet{}
+        Matlab \textbullet{} Simulink \\
+
+        \vspace{5pt}
+        \location{Over 3,000 lines:}
+        Shell (Gitlab) \textbullet{} SQL \\
+
+        \vspace{\topsep}
+        \location{Operational Expertise:}
+        Google Cloud \textbullet{} Kubernetes \textbullet{} Docker \textbullet{} Terraform \\
+
+        \sectionspace % Some whitespace after the section
+
+        \subsection{Robotics \& Space}
+
+        Astrodynamics \textbullet{} Control \textbullet{} Estimation \textbullet{} \\
+        Optimization \textbullet{} Spacecraft Dynamics \textbullet{} \\
+        Real-Time Control \textbullet{} Machine Learning \textbullet{} Deep Learning
+
+
+%------------------------------------------------
+% Links
+%------------------------------------------------
+
+        \sectionspace % Some whitespace after the section
+        \section{Links}
+
+        Personal: \href{http://www.najmusibrahim.com/about}{\bf Website} \\
+        LinkedIn:// \href{https://ca.linkedin.com/in/najmusibrahim}{\bf najmusibrahim} \\
+%        Consulting:// \href{https://github.com/exastris}{\bf exastris}
+%        Code:// \href{https://github.com/exastris}{\bf exastris}
+
+        \sectionspace % Some whitespace after the section
+
+%----------------------------------------------------------------------------------------
+
+    \end{minipage} % The end of the left column
+    \hfill
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+    \begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+
+        \section{Brief}
+
+        Robotics, Space and Defence leader with over 17+ years of experience delivering R\&D and commercialized software and hardware, with a strong focus on  {\textcolor{red}{proven}} trajectory tracking systems for the space and self-driving sectors. The foundational spacecraft GNC systems I've architected have been commercialized over 50 times for the Kepler Communications, GHGSat and Hawkeye 360 constellations. Presently at Oxa, I remotely lead the Verification \& Validation team to reduce inefficiencies, integrate new capabilities and accelerate the business's growth strategies through cloud scaling.
+
+        \sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+
+        \section{Experience}
+
+        \runsubsection{Oxa }
+        \descript{| Staff Engineer (Motion Planning)}
+
+        \location{Autonomous Vehicles (AVs) | Feb 2020 – Present | Toronto, Canada}
+        \vspace{\topsep} % Hacky fix for awkward extra vertical space
+        \begin{tightitemize}
+            \item Remotely led and managed the Europe-based Verification and Validation (V\&V) team delivering robust and long-standing solutions for scaling AV technology.
+            \item Defined the company's self-driving V\&V strategy, including KPIs, philosophy, continuous integration/deployment (CI/CD) and on-road test plans.
+            \item Set technical roadmap and drove test procedures for new V\&V processes.
+            \item Architected C++ metrics interface and implemented autonomy KPIs to serve as the de facto source of internal and external stakeholder reporting.
+            \item Re-architected cloud orchestration of developer CI/CD using Google Kubernetes Engine to deliver 1000s of daily tests at scale.
+            \item Guided VP/Head of Engineering and Principal Engineers to lead long-term V\&V growth strategy for operations streamlining.
+        \end{tightitemize}
+
+        \sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+        \runsubsection{Space Flight Laboratory}
+        \descript{| Lead Engineer (GNC)}
+
+        \location{Space \& Defence | Jan 2010 – Jan 2020 | Toronto, Canada}
+        \begin{tightitemize}
+            \item Architected GNC system for science, communication and military applications to ($2\sigma$) accuracies of $5''$ (knowledge) and $18'$ (pointing), respectively. Implemented navigation systems using GPS receivers, optical sensors, magnetometers and gyroscopes to ($2\sigma$) knowledge accuracies of $10\,\textrm{km}$ in satellite position and $4'$ in satellite orientation.
+            \item Flight qualification, military (ITAR) to space qualification (TRL-1 to TRL-8), C/C++ flight code, hardware calibration, software-in-the-loop simulations, hardware-in-the-loop testing and on-orbit command-and-control for data inferencing, planning and real-time imaging of the Earth.
+            \item Requirements traceability, subcontractor management, proposal writing
+        \end{tightitemize}
+
+        \sectionspace % Some whitespace after the section
+
+%%------------------------------------------------
+%% Consulting - Only enable this once it's full time work
+%%------------------------------------------------
+%
+%        \section{Consulting \& Engagement}
+%
+%        \runsubsection{Astris Aerospace}
+%        \descript{| Head of Engineering}
+%
+%        \location{Space \& Defence | Nov 2025 – Present | Toronto, Canada}
+%        \begin{tightitemize}
+%            \item Architected
+%            \item Architected
+%        \end{tightitemize}
+%
+%
+%        \sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Awards
+%------------------------------------------------
+
+        \section{Selected Conference Publications}
+
+        \begin{tabular}{lll}
+            DMSat-1: Next Gen. Environmental Monitoring & 4S Symposium & Italy \\
+            In-Orbit GNC Experiences of GHGSat-D & ESA GNC & Austria \\
+%            On-Orbit EO Performance of GHGSat-D & IAA Small Sat & Germany \\
+            Design of NEMO-AM AOCS & ESA GNC & Portugal \\
+            NEMO-AM Autonomous Naonsatellite for EO & 4S Symposium & Spain \\
+        \end{tabular}
+
+        \section{Journals and Books}
+
+        \begin{tabular}{lll}
+            Optical Payloads for Space Missions & Chapter 40 & John Wiley \\
+            Estimating Titan's Conductivity & Vol 58 & Journal of Planetary \& Space Science
+        \end{tabular}
+
+        \sectionspace % Some whitespace after the section
+
+%----------------------------------------------------------------------------------------
+
+    \end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+%	SECOND PAGE (EXAMPLE)
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%\section{Example Section}
+
+%\end{minipage} % The end of the left column
+%\hfill
+%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%\section{Example Section 2}
+
+%\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

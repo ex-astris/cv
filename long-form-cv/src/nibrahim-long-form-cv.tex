@@ -1,0 +1,318 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}	
+\usepackage{enumitem}
+\usepackage{verbatim}
+\usepackage{color}
+\textheight=10in
+\pagestyle{empty}
+%\raggedbottom
+\raggedright
+
+%EXPECTED
+%{\scriptsize (expected)}
+
+%  \renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+\newcommand{\area}[2]{\vspace*{-9pt} \begin{verse}\textbf{#1}   #2 \end{verse}  }
+\newcommand{\lineunder}{\vspace*{-8pt} \\ \hspace*{-18pt} \hrulefill \\}
+\newcommand{\header}[1]{{\hspace*{-15pt}\vspace*{6pt} \textsc{#1}} \vspace*{-3pt} \lineunder \vspace{2pt}}
+\newcommand{\employer}[3]{{ \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }}
+\newcommand{\contact}[3]{
+\vspace*{-8pt}
+\begin{center}
+{\LARGE \scshape {#1}}\\
+#2 \lineunder 
+#3
+\end{center}
+\vspace*{-8pt}
+}
+
+\newenvironment{achievements}{\begin{list}{$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}}
+
+\newcommand{\headerspacing}[0]{\vspace{15pt}}
+
+\newcommand{\schoolwithcourses}[4]{
+ \textbf{#1} #2 $\bullet$ #3\\ 
+#4 $\bullet$  Selected Coursework:\\
+\vspace*{5pt}
+}
+
+\newcommand{\school}[4]{
+ \textbf{#1} #2 $\bullet$ #3\\ 
+#4 \\
+}
+% END RESUME DEFINITIONS
+
+\usepackage[pdftex]{hyperref}
+\hypersetup{colorlinks, urlcolor = blue, linkcolor=blue}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\small
+\smallskip
+\vspace*{-55pt}
+%\contact{\href{www.najmusibrahim.com/NIbrahim_MLWorkPackage.zip}{Najmus Ibrahim}}
+\contact{Najmus Ibrahim}
+{Toronto, Canada $\cdot$ (416)-262-2352}
+{najmus@astrisaerospace.com}
+\vspace{7pt}
+
+\begin{center}
+\Large Long Form CV
+\end{center}
+
+\setcounter{tocdepth}{3}
+\tableofcontents
+
+
+\pagebreak
+%-----------------------------------------------------------
+%-----------------------------------------------------------
+\section{Work Experience}
+\vspace{-12pt}
+\hrulefill \\
+\vspace{5pt}
+
+\subsection{Oxa Autonomy Ltd (Autonomous Vehicles)}
+Staff Motion Planning Engineer (Fully Remote -- Toronto, Canada) \hfill Feb 2020 - Present \\
+\vspace{8pt}
+
+Remotely led the primary Integration and Verification \& Validation (V\&V) team as a senior member of Oxa’s Motion Planning group. Ultimately, responsible for steering the company-wide V\&V vision for autonomy performance and reliability, developer productivity and software release efficiency. While sitting at the intersection of the engineered and machine-learned self-driving product, equally involved in the core autonomy software (C++), synthetic testing (Python) and cloud scaling (Terraform, Kubernetes, Argo) stacks alongside the company’s 200+ developers. \\ \vspace{5pt}
+
+\underline{Leadership Responsibilities}:
+
+\begin{itemize}  \itemsep -2pt % reduce space between items
+\item[--] Led and managed the Europe-based V\&V team delivering robust and long-standing solutions for hardening and scaling autonomous vehicle (AV) technology and scaling autonomous vehicle (AV) technology.
+\item[--] Defined the company’s self-driving V\&V strategy, including KPIs, philosophy, continuous
+integration/deployment (CI/CD) and on-road test plans.
+\item[--] Set technical roadmap and, designed and drove test procedures for new V\&V processes
+\item[--] Line management duties including hiring, career coaching and promoting ICs up to Staff-level
+\item[--] Maintained a balanced test environment integrating subsystem- and system-level V\&V
+\item[--] Oversaw the development of processes, tooling and automation to enable product testing
+\item[--] Implemented real-time performance monitoring (Grafana, SQL) for on-road operations
+\item[--] Defined non-conformance management processes for new V\&V processes to ensure accountability and rapid closure to protect AV performance
+\item[--] Guided VP/Head of Engineering and Principal Engineers to lead long-term V\&V growth strategy
+\end{itemize} \vspace{2pt}
+
+\underline{Technical Responsibilities}:
+
+\begin{itemize}  \itemsep -2pt % reduce space between items
+\item[--] Architected C++ metrics interface and implemented autonomy KPIs for internal, customer and regulatory, monitoring and reporting.
+\item[--] Re-architected cloud orchestration of developer CI/CD using Google Kubernetes Engine to deliver 1000s of daily tests at scale.
+\item[--] Led and developed CI/CD of vehicle dynamics model (Gitlab + Python) to harden and enable dynamics feedback loop in the drive-time logic.
+\item[--] Led CI/CD deployment with Mapping, Release and Solutions team to increase developer productivity and support on-road deployment.
+\item[--] Coach V\&V engineers on Planner architecture, mathematical inner-workings and technical layout to  accelerate capability integration
+\end{itemize} \vspace{2pt}
+
+\pagebreak
+%-----------------------------------------------------------
+\subsection{Space Flight Laboratory (Space \& Defence)}
+Lead Guidance, Navigation and Control (GNC) Engineer (Toronto, ON) \hfill Jan 2010 - Jan 2020\\
+Security Clearance: \textcolor{red}{CGP Reliability Status} \vspace{8pt}
+
+Led the foundational Guidance, Navigation and Control (GNC) design, engineering and delivery for operation by Kepler Communications, GHGSat Inc and Hawkeye 360. GNC system flown on over 50+ different revenue-generating spacecraft for communications, environmental- and asset-monitoring with total hardware value of $\sim$ \$200 MM.
+
+\begin{itemize}  \itemsep -3pt % reduce space between items
+%\item[--] {\color{red} Move up management experience (proposals, technical presentaitons, conference rep, collaboration with suppliers/facilities), training of new students/staff, dissemination of best practices, oversight of students/personnel, geopolitical consequences}
+% Add SQL/Hadoop, +CNN implemented on multi-thread CPU/GPU platforms
+\item[--] Architected the GNC systems for all satellite platforms for technology demonstration, science, communication and military applications. Implemented C/C++ flight code flown on dozens of satellites currently operated by Kepler Communication, HawkEye 360, GHGSat Inc.
+\item[--] Responsible for deliverables across Phase A (feasibility) to Phase E (production and operation), encompassing entire engineering design cycle for 10 different projects.
+\item[--] Operated in a substantial technical capacity, while undertaking business roles to help lead department, streamline client-lab interactions, aid overall business objectives and produce deliverables to international customers, private firms and government agencies.
+\end{itemize} \vspace{2pt}
+
+\underline{Technical Responsibilities}:
+
+\begin{itemize}  \itemsep -2pt % reduce space between items
+\item[--] Implemented guidance and control systems to ($2\sigma$) accuracies of $5''$ (knowledge) and $18'$ (pointing), respectively. Implemented navigation systems using GPS receivers, optical sensors, magnetometers and gyroscopes to knowledge accuracies of $10\,\textrm{km}$ ($2\sigma$) in satellite position and $4'$ ($2\sigma$) in satellite orientation.
+\item[--] Developed and implemented trajectory planner, frequency-based controllers and probabilistic estimators (Kalman filters, batch, etc.) for inertial pointing and agile target tracking.
+\item[--] Hardware flight qualification, C/C++ flight code, hardware calibration, software-in-the-loop  simulations, hardware-in-the-loop testing and on-orbit command-and-control for data inferencing, planning and real-time imaging of the Earth.
+\item[--] Led space qualification of military (ITAR) hardware from TRL-1 to TRL-8 in collaboration with Canadian government and overseas hardware supplier.
+\end{itemize} \vspace{2pt}
+
+\underline{Leadership Responsibilities}:
+
+\begin{itemize}  \itemsep -2pt % reduce space between items
+\item[--] Acted as GNC technical authority in supporting cross-functional initiatives.
+\item[--] Scoped system capabilities and requirements, best practices, technical tools and test plans.
+\item[--] Collaborated and negotiated deliverables from external partners, vendors and sub-contractors.
+\item[--] Prepared proposals, design reviews and strategic roadmaps for new projects/technologies.
+\item[--] Presented works at client-facing milestone meetings and international conferences.
+\item[--] Managed and delegated departmental tasks and led junior members.
+\end{itemize} \vspace{2pt}
+
+
+\pagebreak
+%-----------------------------------------------------------
+\subsection{Pratt and Whitney (Aviation)}
+Co-op Structures Engineer (Mississauga, Canada)  \hfill Jun 2007 - Aug 2008 \\
+Security Clearance: \textcolor{red}{CGP Reliability Status} \vspace{8pt}
+
+\begin{itemize}  \itemsep -2pt % reduce space between items
+\item[--] Devised and managed all  aspects of specimen quality assurance and testing for aircraft jet engines in order to substantiate product life, assess forging properties and predict future performance. Work directly incurred a savings of 185 engineering-hours ($\sim$ \$25,000 CAD) per year.
+ \item[--] Devised and managed all  aspects of spin pit and specimen testing for compressor rotors to substantiate low cycle fatigue (LCF) life  and forging material properties. % (LCF, tensile and impact).
+\item[--] Maintained and upgraded specimen product database (SPD) housing over 20 years of engine damage and testing history for departmental-wide use
+\item[--] Developed and optimized advanced analytics and statistical methods to automate SPD queries, thereby incurring a savings of 185 engineering-hours ($\sim$ \$25,000 CAD) per year
+\item[--] Maintained and upgraded LCF history database by developing methodology to quantify foreign object damage testing, and profiling testing methodologies for departmental reference.
+\item[--] Supported various international teams and engine programs through material/stress and statistical analysis, hands-on inspection and data mining for both field and experimental parts.
+\item[--] Optimized data analysis techniques and enhanced lifing analysis tools, thereby incurring a savings of 185 engineering man-hours ($\sim$ \$25,000) per year.
+\end{itemize} \vspace{2pt}
+
+
+\pagebreak
+%-----------------------------------------------------------
+%-----------------------------------------------------------
+\section{Technical Education}
+\vspace{-12pt}
+\hrulefill \\
+\vspace{5pt}
+
+{\bfseries {\sl \bfseries University of Toronto (Computer Science)}} \hfill 2015 -- 2018\\ Supplementary Graduate Studies (Toronto, ON); \hspace{2pt} GPA: 4.0/4.0  \\ \vspace{-5pt}
+\begin{itemize} \itemsep -2pt
+\item[--] Topics: Machine Learning, Neural Networks, Computer Vision
+\end{itemize}
+
+\vspace{-2pt}
+{\bfseries {\sl \bfseries ESA/JRC School on Global Navigation Satellite Systems (GNSS)}} \hfill Aug 2015\\European Space Agency Joint Research Centre (Barcelona, Spain)\\ \vspace{-5pt}
+\begin{itemize} \itemsep -2pt
+\item[--] GNSS Topics: signal processing, iono/tropospheric effects, interference technologies, \\augmentation systems, inertial navigation design, entrepreneurship, IPR/patents.
+\end{itemize}
+
+
+\vspace{-3pt}
+{\bfseries {\sl \bfseries MASc (Aerospace Engineering)}} \hfill Nov 2013\\University of Toronto - Space Flight Laboratory (Toronto, ON) \\
+Advisor: Dr. Robert E. Zee; \hspace{2pt} GPA: 4.0/4.0 \vspace{-3pt}
+\begin{itemize} \itemsep -2pt
+\item[--] Developed and implemented Attitude and Orbit Control System (AOCS) design for Earth Observation (EO), communication  and technology demonstration satellites.
+\item[--] Verification of AOCS design through integrated high fidelity simulation of \\ orbital mechanics, sensor/actuator characterization and flight software-in-the-loop.
+\item[--] Thesis: Attitude and Orbit Control of Small Satellites for Earth Pointing\\
+\item[--] Topics: Numerical Methods/Optimization, State Estimation, Dynamics and Control% Astrodynamics, Spacecraft Dynamics \& Control, Earth Observation (EO)
+\end{itemize} 
+
+\vspace{-2pt}
+{\bfseries {\sl \bfseries BASc (Engineering Science: Aerospace Engineering)}} \hfill Jun 2009\\University of Toronto (Toronto, ON) \hfill \vspace{-3pt}
+\begin{itemize} \itemsep -2pt
+\item[--] University of Toronto National Arbor Scholar and Dean's Honour List
+\end{itemize} 
+
+% Adjust spacing due to previous item sequence
+\vspace{-6pt}
+
+\pagebreak
+%-----------------------------------------------------------
+%-----------------------------------------------------------
+\section{Business and Leadership Training}
+\vspace{-12pt}
+\hrulefill \\
+\vspace{5pt}
+
+{\sl \bfseries Oxford Leading Strategic Projects Programme} \hfill 2024\\
+University of Oxford (Said Business School)
+
+Strategic project management for highly complex endeavours which leave a lasting legacy beyond traditional outputs such as scope, cost and quality covering:
+
+\begin{itemize} \itemsep -2pt
+\item[--] Strategic Project Management
+\item[--] Global Stakeholder Management
+\item[--] Complex Risk Assessment and Management
+\end{itemize}
+
+{\bfseries {\sl \bfseries Project Management and Leadership (Certificate)}} \hfill 2019\\University of Toronto School of Continuing Studies (Toronto, ON) \hfill \vspace{-3pt}
+\begin{itemize} \itemsep -2pt
+\item[--] Topics: Managing Teams, Business Strategy, Negotiation, Conflict Resolution, Public Presentation
+\end{itemize}
+
+
+% Section break
+%-----------------------------------------------------------
+\section{Technical Training}
+\vspace{-12pt}
+\hrulefill \\
+\vspace{5pt}
+
+{\bfseries {\sl \bfseries Real-Time Industrial Controller Design Workshop}} \hfill Dec 2012\\Texas Instruments (Toronto, ON) \hfill \vspace{-3pt}
+\begin{itemize} \itemsep -2pt
+\item[--] Workshop on synthesizing real-time digital controllers for brushless motors.
+\end{itemize}
+
+\vspace{6pt}
+{\sl \bfseries Machinist Operations (Course)} \hfill Jul 2008\\George Brown College (Toronto, ON)\vspace{-3pt}
+\begin{itemize} \itemsep -2pt
+\item[--] Obtained 100hrs of precision machining skills for fitted machine parts. %, with over100hrs of experience in milling, turning, drilling, boring and reaming.
+\end{itemize}
+
+\vspace{6pt}
+{\sl \bfseries Finite Element Analysis Training} \hfill Jun 2007\\Return On Investment Engineering (Toronto, ON)
+\vspace{-3pt}
+\begin{itemize} \itemsep -2pt
+\item[--] Applied and was instructed in ANSYS FEA techniques including\\ APDL, thermal-structure, modal and bonded-contact analysis.
+\end{itemize}
+`
+
+
+\pagebreak
+%-----------------------------------------------------------
+%-----------------------------------------------------------
+\section{Skills}
+\vspace{-12pt}
+\hrulefill \\
+\vspace{5pt}
+
+{\sl \bfseries Leadership:} Public Presentation, Strategy, Line/Stakeholder Management, Proposals \\ \vspace{2pt}
+%{\sl \bfseries Verbal Communication:} English (fluent), Spanish (functional), French (functional) \\\vspace{2pt}
+{\sl \bfseries Analytics:} Numerical Methods, Non-linear Optimization \\ \vspace{2pt}
+{\sl \bfseries Software Development:} C, C++ (17/20), Python, SQL \\ \vspace{2pt}
+{\sl \bfseries Cloud Development:} GCP, Kubernetes, Docker, Argo \\ \vspace{2pt}
+{\sl \bfseries Commercial Software:} STK/GMAT, MATLAB, Simulink, Orekit \\ \vspace{2pt}
+{\sl \bfseries Engineering:} Systems Design, State Estimation, Control Systems, Astrodynamics \\ \vspace{2pt}
+
+\headerspacing
+\section{Conferences and Publications}
+\vspace{-12pt}
+\hrulefill \\
+\vspace{5pt}
+
+{\sl \bfseries DMSat-1: Next Gen. Environmental Monitoring on a Small Satellite Platform} \hfill May 2018
+\\ 4S Small Satellites Systems and Services Symposium (Sorrento, Italy) \\
+\vspace{3pt}
+{\sl \bfseries In-Orbit Guidance, Navigation and Control Experiences of GHGSat-D} \hfill Jun 2017
+\\ European Space Agency Conference on GNC Systems (Salzburg, Austria) \\
+\vspace{3pt}
+{\sl \bfseries On-Orbit Earth Observation Performance of GHGSat-D} \hfill Apr 2017
+\\ IAA Symposium on Small Satellites for EO (Berlin, Germany) \\
+\vspace{3pt}
+{\sl \bfseries Optical Payloads for Space Missions (Ch. 40)} \hfill Dec 2015
+\\ Book publication for John Wiley and Sons Ltd. \\
+\vspace{3pt}
+{\sl \bfseries Emerging Small Satellite Earth Observation Technologies (Poster)} \hfill Apr 2015
+\\ IAA Symposium on Small Satellites for EO (Berlin, Germany) \\
+\vspace{3pt}
+{\sl \bfseries Design of the NEMO-AM Attitude and Orbit Control System} \hfill Jun 2014
+\\ European Space Agency Conference on GNC Systems (Porto, Portugal) \\
+\vspace{3pt}
+{\sl \bfseries NEMO-AM: Autonomous Nanosatellite for EO and Aerosol Monitoring} \hfill May 2014
+\\ 4S Small Satellites Systems and Services Symposium (Mallorca, Spain) \\
+\vspace{3pt}
+{\sl \bfseries Estimating Titan's Electron Conductivity from the Huygens Experiment} \hfill Apr 2009
+\\Journal of Planetary and Space Science (vol. 58, issue 14-15, pp. 1945-1952)
+
+
+\headerspacing
+\section{Professional Affiliations and Certifications}
+\vspace{-12pt}
+\hrulefill \\
+\vspace{5pt}
+%{\sl \bfseries Project Management Institute}, PMP Certification \hfill 2019 (expected) \\
+{\sl \bfseries Licensing Executive Society} (Toronto Chapter) \hfill 2017 -- Present \\
+{\sl \bfseries Professional Engineers of Ontario} (PEO), P.Eng License \hfill 2015 -- Present \\
+% {\sl \bfseries Transport Canada}, Private Pilot's License (ongoing) \hfill 2015 -- Present \\
+% {\sl \bfseries PADI},  Advanced Open Water Diver \hfill 2014 -- Present \\
+{\sl \bfseries American Institute of Aeronautics and Astronautics} (AIAA), Member \hfill 2006 -- Present\vspace{2pt}
+
+\end{document}
